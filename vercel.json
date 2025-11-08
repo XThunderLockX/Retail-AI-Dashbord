@@ -16,6 +16,6 @@
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "https://retail-ai-backend.onrender.com"
+    "REACT_APP_API_URL": "https://retail-ai-dashbord.onrender.com"
   }
 }
