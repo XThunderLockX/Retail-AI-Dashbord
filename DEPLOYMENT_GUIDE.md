@@ -36,14 +36,18 @@ const API_BASE_URL = process.env.REACT_APP_API_URL ||
     : '');
 ```
 
-## Option 2: Vercel + Railway (More Professional)
+## Option 2: Vercel + Render (More Professional)
 
-### Deploy Backend to Railway
-1. Go to https://railway.app/
-2. Click "New Project" → "Deploy from GitHub repo"
-3. Select your repository
-4. Railway will detect it's a Node.js app and deploy it
-5. Your backend URL: `https://your-app-name.up.railway.app`
+### Deploy Backend to Render (Free)
+1. Go to https://render.com/
+2. Click "New" → "Web Service"
+3. Connect GitHub → Select your repository
+4. Configure:
+   - Root Directory: backend
+   - Runtime: Node 18
+   - Build Command: npm install
+   - Start Command: npm start
+5. Your backend URL: `https://your-app-name.onrender.com`
 
 ### Deploy Frontend to Vercel
 1. Go to https://vercel.com/
