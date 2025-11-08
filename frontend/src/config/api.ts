@@ -1,7 +1,7 @@
 // API Configuration
 const API_BASE_URL = process.env.REACT_APP_API_URL || 
   (process.env.NODE_ENV === 'production' 
-    ? 'https://retail-ai-backend-production.up.railway.app' 
+    ? 'https://retail-ai-dashbord.onrender.com' 
     : '');  // Use proxy in development
 
 export const API_ENDPOINTS = {
