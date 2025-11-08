@@ -19,8 +19,15 @@ const dbPath = process.env.NODE_ENV === 'production'
   ? '/tmp/retail_ai.db' 
   : path.join(__dirname, 'database', 'retail_ai.db');
 
-app.use(helmet());
-app.use(cors());
+app.use(helmet({
+  crossOriginResourcePolicy: { policy: "cross-origin" }
+}));
+app.use(cors({
+  origin: ['https://fancy-torrone-92c710.netlify.app', 'http://localhost:3000'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(morgan('combined'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
