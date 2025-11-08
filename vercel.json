@@ -14,5 +14,8 @@
       "src": "/(.*)",
       "dest": "/frontend/index.html"
     }
-  ]
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://retail-ai-backend.onrender.com"
+  }
 }
